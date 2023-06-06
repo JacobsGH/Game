@@ -191,6 +191,7 @@ class AlienInvasion:
 
         # Показываем кнопку Play, если игра неактивна.
         if not self.stats.game_active:
+            pygame.mouse.set_visible(True)
             self.play_button.draw_button()
 
         # Отображение последнего прорисованного экрана.
